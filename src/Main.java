@@ -4,14 +4,13 @@ public class Main {
         int diseredSum = 2_459_000;
         int sum = 0;
         int amount = 15_000;
-        double percent = 1D / 100;
         int month = 0;
         while (sum < diseredSum) {
             sum += amount;
-            sum = (int) (sum * (1 + percent));
             month++;
-            System.out.println("Месяц " + month + " , сумма накоплений равна " + sum + " рублей");
         }
+        System.out.println("Месяц " + month + ", сумма накоплений равна " + sum + " рублей");
+
         System.out.println();
         System.out.println("Задача 2");
         int number = 0;
@@ -31,19 +30,20 @@ public class Main {
         int currentYear = 2024;
         for (int year = currentYear; year < currentYear + 10; year++) {
             population += population * fertilityPerThousend / 1000 - population * mortalityPerThousend / 1000;
-            System.out.println("Год " + year + ", численность населения составляет" + population);
+            System.out.println("Год " + year + ", численность населения составляет " + population);
         }
         System.out.println();
         System.out.println("Задача 4");
-        percent = 7D / 100;
+        double percent = 7D / 100;
         diseredSum = 12_000_000;
         sum = amount;
         month = 0;
         while (sum < diseredSum) {
             sum = (int) (sum * (1 + percent));
             month++;
-            System.out.println("Месяц " + month + " , сумма накоплений равна " + sum + " рублей");
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + sum + " рублей");
         }
+
         System.out.println();
         System.out.println("Задача 5");
         sum = amount;
@@ -52,7 +52,7 @@ public class Main {
             sum = (int) (sum * (1 + percent));
             month++;
             if (month % 6 == 0) {
-                System.out.println("Месяц " + month + " , сумма накоплений равна " + sum + " рублей");
+                System.out.println("Месяц " + month + ", сумма накоплений равна " + sum + " рублей");
             }
             System.out.println();
             System.out.println("Задача 6");
@@ -63,7 +63,7 @@ public class Main {
                 sum = (int) (sum * (1 + percent));
                 month++;
                 if (month % 6 == 0) {
-                    System.out.println("Месяц " + month + " , сумма накоплений равна " + sum + " рублей");
+                    System.out.println("Месяц " + month + ", сумма накоплений равна " + sum + " рублей");
                 }
                 System.out.println();
                 System.out.println("Задача 7");
